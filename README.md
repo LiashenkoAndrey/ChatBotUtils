@@ -6,7 +6,7 @@ Utils for creating chat bots in Telegram/Viber or any other.
 
 Load repository from GitHub
 
-```bash
+```xml
  <repositories>
       <repository>
           <id>ChatBotUtils</id>
@@ -17,7 +17,7 @@ Load repository from GitHub
 
 Import dependency
 
-```bash
+```xml
   <dependency>
       <groupId>org.chatBotUtils</groupId>
       <artifactId>ChatBotUtils</artifactId>
