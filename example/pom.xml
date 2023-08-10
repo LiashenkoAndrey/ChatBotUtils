@@ -1,9 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>org.chatBotUtils</groupId>
-  <artifactId>ChatBotUtils</artifactId>
+  <groupId>org.chatBotUtilsExample</groupId>
+  <artifactId>chatBotUtilsExample</artifactId>
   <version>1.0</version>
   <build>
     <plugins>
@@ -11,13 +10,19 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>17</source>
-          <target>17</target>
+          <source>9</source>
+          <target>9</target>
         </configuration>
       </plugin>
     </plugins>
   </build>
-  <packaging>jar</packaging>
+
+  <repositories>
+    <repository>
+      <id>ChatBotUtils</id>
+      <url>https://github.com/LiashenkoAndrey/ChatBotUtils.git</url>
+    </repository>
+  </repositories>
 
   <name>ChatBotUtils</name>
   <url>http://maven.apache.org</url>
@@ -35,21 +40,21 @@
     </dependency>
 
     <dependency>
+      <groupId>org.chatBotUtils</groupId>
+      <artifactId>ChatBotUtils</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.26</version>
     </dependency>
 
     <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <version>2.20.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <version>2.20.0</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>6.0.11</version>
     </dependency>
 
   </dependencies>

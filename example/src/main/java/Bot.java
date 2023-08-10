@@ -1,8 +1,4 @@
-package gov.miloverada.telegram_bot;
-
 import lombok.RequiredArgsConstructor;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.chatBotUtils.util.UpdateService;
 import org.chatBotUtils.util.exceptions.UpdateProcessingException;
 import org.springframework.context.ApplicationContext;
@@ -13,9 +9,6 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @Component
 @RequiredArgsConstructor
 public class Bot extends TelegramLongPollingBot {
-
-    private static final Logger logger = LogManager.getLogger(Bot.class);
-
 
     private final ApplicationContext context;
 
